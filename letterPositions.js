@@ -27,13 +27,16 @@ const letterPositions = function(sentence) {
   let result = {};
   for (let i = 0; i < newSentence.length; i++) {
     let letter = newSentence[i];
-    result[letter] = result[letter] ? result[letter].push(i) : [i];
+    result[letter] = result[letter] ? [...result[letter],i]: [i];
   }
   return result;
 };
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+console.log(letterPositions("hello"))
+assertArraysEqual(letterPositions("hello").l, [2, 3]);
 /*
+
+ l: [2,3]
 {
   l: [0],
   i: [1, 11],
