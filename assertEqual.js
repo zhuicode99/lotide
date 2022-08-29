@@ -10,9 +10,9 @@ const assertEqual = function(actual, expected) {
 
 };
 
-/* // TEST CODE
+// TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1); */
+assertEqual(1, 1);
 
 module.exports = assertEqual;
 
